@@ -19,4 +19,10 @@ public class TransferController {
         // Logic to get transfer status
         return ResponseEntity.ok("Transfer status: In Progress");
     }
+
+    @GetMapping("/archive")
+    public ResponseEntity<String> archiveTransfer() {
+        // Logic to archive transfer
+        return ResponseEntity.ok("Transfer archived successfully");
+    }
 }
