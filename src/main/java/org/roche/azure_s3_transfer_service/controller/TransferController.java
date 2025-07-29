@@ -13,4 +13,10 @@ public class TransferController {
         // Logic to initiate transfer
         return ResponseEntity.ok("Transfer initiated successfully");
     }
+
+    @GetMapping("/status")
+    public ResponseEntity<String> getTransferStatus() {
+        // Logic to get transfer status
+        return ResponseEntity.ok("Transfer status: In Progress");
+    }
 }
